@@ -1,0 +1,23 @@
+{
+  "name": "foliostephan_3_19082021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w assets/scss -o assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stephan075/FolioStephan_3_19082021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stephan075/FolioStephan_3_19082021/issues"
+  },
+  "homepage": "https://github.com/Stephan075/FolioStephan_3_19082021#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

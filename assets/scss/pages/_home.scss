@@ -1,0 +1,14 @@
+body {
+  background: green;
+
+  @include xl {
+    background: orange;
+  }
+
+  @include sm {
+    background: blue;
+  }
+  @include xs {
+    background: red;
+  }
+}

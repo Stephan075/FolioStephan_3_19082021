@@ -1,0 +1,52 @@
+/* Landscape phones */
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+p {
+  margin: 1rem 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem 0 2rem 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: var(--text);
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+body {
+  font-family: var(--font-family);
+  color: var(--text);
+  font-size: 1.6rem;
+  line-height: 1.7; }
+
+body {
+  background: green; }
+  @media only screen and (min-width: 1400px) {
+    body {
+      background: orange; } }
+  @media only screen and (max-width: 767px) {
+    body {
+      background: blue; } }
+  @media only screen and (max-width: 480px) {
+    body {
+      background: red; } }

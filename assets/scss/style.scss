@@ -1,0 +1,17 @@
+// partial
+
+@import 'utils/classes';
+@import 'utils/mixins';
+
+@import 'base/reset';
+@import 'base/base';
+@import 'base/animations';
+@import 'base/typography';
+
+@import 'components/buttons';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/home';
+@import 'pages/menu';
