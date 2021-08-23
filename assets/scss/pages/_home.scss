@@ -13,6 +13,7 @@ body {
   }
 }
 
+// local
 .local {
   display: flex;
   justify-content: center;
@@ -23,6 +24,7 @@ body {
   }
 }
 
+// hero
 .hero {
   display: flex;
   justify-content: center;
@@ -52,6 +54,94 @@ body {
     &__subtitle {
       line-height: 2rem;
       margin-bottom: 3rem;
+    }
+  }
+}
+
+// Fonctionnement
+.operation {
+  padding: 4rem 0 5rem 0;
+  background: var(--background-primaire);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include xs {
+      align-items: stretch;
+    }
+
+    .list {
+      list-style: none;
+      /* On réinitialise nom-compteur à 0 */
+      counter-reset: list_item;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: start;
+      @include sm {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2rem;
+      }
+    }
+
+    .list_item:before {
+      counter-increment: list_item;
+      content: counter(list_item);
+      background: var(--primaire);
+      color: #fff;
+      border-radius: 50%;
+      height: 2.5rem;
+      width: 2.5rem;
+      margin: 0 1.5rem 0 -31px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    //media queries xs
+    @include xs {
+      &--title {
+        padding: 0 0 0 2rem;
+        margin: 0;
+      }
+    }
+  }
+
+  .list_item {
+    padding: 2rem;
+    margin: 1rem 3rem 1rem 3rem;
+    background: #f6f6f6;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.6rem 1rem rgba(black, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+
+    &:hover {
+      background: #f5edff;
+      i {
+        color: var(--primaire);
+      }
+    }
+    &--icon {
+      margin-right: 2rem;
+      color: #828282;
+      width: 20px;
+    }
+    //media queries sm
+    @include sm {
+      justify-content: stretch;
+    }
+    //media queries xs
+    @include xs {
+      justify-content: flex-start;
+
+      &--title {
+        padding: 0 0 0 2rem;
+        margin: 0;
+      }
     }
   }
 }
