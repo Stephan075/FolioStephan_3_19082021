@@ -50,6 +50,24 @@ body {
 .local__icon {
   margin-right: 1rem; }
 
+.btn, .btn:link, .btn:visited {
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn:hover {
+  background: linear-gradient(to top left, #a16be0, #ff93e1);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3); }
+
+.btn--gradient {
+  color: white;
+  background: linear-gradient(to top left, var(--primaire), var(--secondaire)); }
+
 .header {
   display: flex;
   justify-content: center;
@@ -78,3 +96,25 @@ body {
   background: #eaeaea; }
   .local__content {
     margin: 1.5rem; }
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding: 1rem 0 4rem 0;
+  background: var(--background-secondaire); }
+  .hero__content {
+    text-align: center; }
+  .hero__subtitle {
+    margin-bottom: 2rem; }
+  @media only screen and (max-width: 480px) {
+    .hero__content {
+      max-width: 300px;
+      text-align: center;
+      padding: 1rem; }
+    .hero__title {
+      line-height: 3rem; }
+    .hero__subtitle {
+      line-height: 2rem;
+      margin-bottom: 3rem; } }

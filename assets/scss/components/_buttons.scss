@@ -1,0 +1,31 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+  }
+
+  &:hover {
+    background: linear-gradient(
+      to top left,
+      lighten(#9356dc, 5%),
+      lighten(#ff79da, 5%)
+    );
+    box-shadow: 0 1rem 1rem rgba(black, 0.3);
+  }
+  &--gradient {
+    color: white;
+    background: linear-gradient(
+      to top left,
+      var(--primaire),
+      var(--secondaire)
+    );
+  }
+}
