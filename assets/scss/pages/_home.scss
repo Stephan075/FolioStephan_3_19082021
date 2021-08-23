@@ -9,6 +9,16 @@ body {
     background: blue;
   }
   @include xs {
-    background: #eaeaea;
+    background: palevioletred;
+  }
+}
+
+.local {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaeaea;
+  &__content {
+    margin: 1.5rem;
   }
 }

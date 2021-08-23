@@ -6,9 +6,18 @@ body {
 }
 
 .header {
-  .logo {
+  &__logo {
     font-size: 3rem;
     line-height: 3.2rem;
     font-family: 'Shrikhand', cursive;
+  }
+}
+
+.local {
+  &__content {
+    font-weight: 500;
+  }
+  &__icon {
+    margin-right: 1rem;
   }
 }
