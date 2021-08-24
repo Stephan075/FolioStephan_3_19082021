@@ -69,6 +69,12 @@ body {
   line-height: 3.2rem;
   font-family: 'Shrikhand', cursive; }
 
+.restaurent__menu--title {
+  font-size: 2.6rem;
+  letter-spacing: 0.1rem;
+  font-family: 'Shrikhand', cursive;
+  margin: 0; }
+
 .btn, .btn:link, .btn:visited {
   padding: 1rem 2rem;
   display: inline-block;
@@ -95,6 +101,10 @@ body {
   background: var(--background-primaire);
   z-index: 1;
   position: relative; }
+  .header .return {
+    position: absolute;
+    top: 13px;
+    left: 20px; }
 
 footer,
 footer a {
@@ -296,3 +306,73 @@ body {
 
 .restaurant__content .card__btn--like:hover {
   color: red; }
+
+.menu__hero--img img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover; }
+
+.menu {
+  background: var(--background-secondaire);
+  margin-top: -4rem;
+  border-radius: 3rem 3rem 0 0;
+  z-index: 1;
+  position: relative;
+  color: black; }
+  .menu .order {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 4rem;
+    margin-right: 3rem; }
+    @media only screen and (max-width: 480px) {
+      .menu .order {
+        justify-content: center; } }
+
+.restaurent__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; }
+  @media only screen and (max-width: 480px) {
+    .restaurent__menu {
+      justify-content: space-between; } }
+  .restaurent__menu i {
+    margin-left: 3rem; }
+
+.menu__list {
+  padding: 2rem; }
+  .menu__list--title {
+    position: relative; }
+    .menu__list--title::after {
+      content: '';
+      width: 4rem;
+      height: 0.3rem;
+      background: var(--tertiaire);
+      position: absolute;
+      left: 0;
+      bottom: 0; }
+  .menu__list .desc {
+    background: var(--background-primaire);
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 1.5rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    box-shadow: 0 0.6rem 1rem rgba(30, 39, 46, 0.1); }
+    .menu__list .desc .title {
+      font-weight: 700;
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+    .menu__list .desc .subtitle {
+      display: flex;
+      justify-content: space-between; }
+      .menu__list .desc .subtitle__name {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden; }
+      .menu__list .desc .subtitle__price {
+        font-weight: 700; }
+  .menu__list--entry, .menu__list--plate, .menu__list--desserts {
+    margin-bottom: 4rem; }

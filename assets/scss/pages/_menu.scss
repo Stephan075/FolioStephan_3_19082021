@@ -1,0 +1,98 @@
+// hero
+.menu__hero {
+  &--img img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.menu {
+  background: var(--background-secondaire);
+  margin-top: -4rem;
+  border-radius: 3rem 3rem 0 0;
+  z-index: 1;
+  position: relative;
+  color: black;
+
+  // btn order
+  .order {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 4rem;
+    margin-right: 3rem;
+    @include xs {
+      justify-content: center;
+    }
+  }
+}
+
+// nom du restaurant
+.restaurent__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  @include xs {
+    justify-content: space-between;
+  }
+  i {
+    margin-left: 3rem;
+  }
+}
+
+// liste des menues
+.menu__list {
+  padding: 2rem;
+
+  // title menu (ENTRÉES, PLATS, DESSERTS)
+  &--title {
+    position: relative;
+    &::after {
+      content: '';
+      width: 4rem;
+      height: 0.3rem;
+      background: var(--tertiaire);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  // forme description
+  .desc {
+    background: var(--background-primaire);
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 1.5rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    box-shadow: 0 0.6rem 1rem rgba($color-black, 0.1);
+
+    .title {
+      font-weight: 700;
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .subtitle {
+      display: flex;
+      justify-content: space-between;
+      &__name {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      &__price {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &--entry,
+  &--plate,
+  &--desserts {
+    margin-bottom: 4rem;
+  }
+}

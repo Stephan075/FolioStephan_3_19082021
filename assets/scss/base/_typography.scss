@@ -43,3 +43,13 @@ body {
     font-family: 'Shrikhand', cursive;
   }
 }
+
+// nom du restaurant
+.restaurent__menu {
+  &--title {
+    font-size: 2.6rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Shrikhand', cursive;
+    margin: 0;
+  }
+}

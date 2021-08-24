@@ -6,4 +6,9 @@
   background: var(--background-primaire);
   z-index: 1;
   position: relative;
+  .return {
+    position: absolute;
+    top: 13px;
+    left: 20px;
+  }
 }
