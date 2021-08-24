@@ -34,3 +34,12 @@ body {
     font-weight: 700;
   }
 }
+
+// footer
+.footer {
+  &__logo {
+    font-size: 1.7rem;
+    line-height: 3.2rem;
+    font-family: 'Shrikhand', cursive;
+  }
+}

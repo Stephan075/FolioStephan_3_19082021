@@ -1,0 +1,50 @@
+// variable
+$background-footer: #353535;
+
+// color
+$color-white: #ecf0f1;
+
+footer,
+footer a {
+  color: $color-white;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  background: $background-footer;
+  padding: 2rem;
+
+  @include xs {
+    flex-flow: column wrap;
+  }
+
+  &__logo {
+    align-self: center;
+    @include xs {
+      align-self: start;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-flow: row wrap;
+
+    @include sm {
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+    &__item {
+      margin: 2rem;
+      @include sm {
+        margin: 0;
+      }
+      &--icon {
+        width: 5px;
+        margin-right: 2rem;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

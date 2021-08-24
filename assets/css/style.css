@@ -64,6 +64,11 @@ body {
 .operation .list_item {
   font-weight: 700; }
 
+.footer__logo {
+  font-size: 1.7rem;
+  line-height: 3.2rem;
+  font-family: 'Shrikhand', cursive; }
+
 .btn, .btn:link, .btn:visited {
   padding: 1rem 2rem;
   display: inline-block;
@@ -90,6 +95,41 @@ body {
   background: var(--background-primaire);
   z-index: 1;
   position: relative; }
+
+footer,
+footer a {
+  color: #ecf0f1; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  background: #353535;
+  padding: 2rem; }
+  @media only screen and (max-width: 480px) {
+    .footer {
+      flex-flow: column wrap; } }
+  .footer__logo {
+    align-self: center; }
+    @media only screen and (max-width: 480px) {
+      .footer__logo {
+        align-self: start; } }
+  .footer .list {
+    display: flex;
+    flex-flow: row wrap; }
+    @media only screen and (max-width: 767px) {
+      .footer .list {
+        flex-direction: column;
+        margin-top: 2rem; } }
+    .footer .list__item {
+      margin: 2rem; }
+      @media only screen and (max-width: 767px) {
+        .footer .list__item {
+          margin: 0; } }
+      .footer .list__item--icon {
+        width: 5px;
+        margin-right: 2rem;
+        font-size: 1.3rem; }
 
 body {
   background: green; }
