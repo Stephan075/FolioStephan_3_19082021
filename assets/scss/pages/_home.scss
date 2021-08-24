@@ -158,6 +158,10 @@ body {
 }
 
 // restaurant
+.restaurant {
+  background: var(--background-secondaire);
+  padding: 4rem 0 5rem 0;
+}
 .restaurant__content {
   ul {
     display: flex;
