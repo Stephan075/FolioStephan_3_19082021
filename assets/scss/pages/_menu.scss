@@ -1,3 +1,13 @@
+// variable
+
+// Background
+$background-confirmation: #99e2d0;
+$background-menuItem: #fff;
+$background-icon: #fff;
+
+// color
+$color-icon: #99e2d0;
+
 // hero
 .menu__hero {
   &--img img {
@@ -58,41 +68,72 @@
       bottom: 0;
     }
   }
-
-  // mise en forme description
-  .desc {
-    background: var(--background-primaire);
-    display: flex;
-    flex-flow: column nowrap;
-    border-radius: 1.5rem;
-    margin: 2rem 0;
-    padding: 1rem;
-    box-shadow: 0 0.6rem 1rem rgba($color-black, 0.1);
-
-    .title {
-      font-weight: 700;
-      margin: 0;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
-    .subtitle {
-      display: flex;
-      justify-content: space-between;
-      &__name {
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-      }
-      &__price {
-        font-weight: 700;
-      }
-    }
-  }
-
   &--entry,
   &--plate,
   &--desserts {
     margin-bottom: 4rem;
+  }
+}
+
+.menu__item {
+  background-color: $background-menuItem;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0 0.6rem 1rem rgba($color-black, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+
+  &--header {
+    flex: 1;
+
+    .title {
+      margin: 0;
+    }
+
+    .description {
+      margin: 0;
+    }
+  }
+
+  &--price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 0.5rem;
+  }
+
+  &--confirmation {
+    background: $background-confirmation;
+    margin: -1rem -7rem -2rem 1rem;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+
+    .icon {
+      height: 2.5rem;
+      width: 2.5rem;
+      background: $background-icon;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transform: rotate(-360deg);
+      transition: all 0.5s ease-in-out;
+      i {
+        color: $color-icon;
+      }
+    }
+  }
+
+  &:hover &--confirmation {
+    margin-right: -1rem;
+  }
+
+  &:hover .icon {
+    transform: rotate(0);
   }
 }
