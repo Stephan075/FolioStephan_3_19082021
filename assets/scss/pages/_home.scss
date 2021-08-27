@@ -24,6 +24,31 @@ body {
   }
 }
 
+.loader {
+  overflow: hidden;
+  background: var(--background-secondaire);
+  min-height: 100%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  animation: loader-page 3s ease-in-out normal forwards;
+  &__logo {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    &--loading {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
 // local
 .local {
   display: flex;

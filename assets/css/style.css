@@ -54,6 +54,22 @@ img {
     transform: translateX(-100px);
     transform: translateX(-100px); } }
 
+/**
+ * ----------------------------------------
+ * animation loader
+ * ----------------------------------------
+ */
+@keyframes loader-page {
+  0% {
+    opacity: 1; }
+  75% {
+    opacity: 1; }
+  99% {
+    opacity: 0; }
+  100% {
+    visibility: hidden;
+    opacity: 0; } }
+
 body {
   font-family: var(--font-family);
   color: var(--text);
@@ -185,6 +201,28 @@ body {
   @media only screen and (max-width: 480px) {
     body {
       background: palevioletred; } }
+
+.loader {
+  overflow: hidden;
+  background: var(--background-secondaire);
+  min-height: 100%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  animation: loader-page 3s ease-in-out normal forwards; }
+  .loader__logo {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center; }
+    .loader__logo--loading {
+      width: 150px;
+      height: 150px; }
 
 .local {
   display: flex;

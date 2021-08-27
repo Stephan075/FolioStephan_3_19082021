@@ -14,3 +14,24 @@
     transform: translateX(-100px);
   }
 }
+
+/**
+ * ----------------------------------------
+ * animation loader
+ * ----------------------------------------
+ */
+@keyframes loader-page {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
