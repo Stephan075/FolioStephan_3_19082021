@@ -68,6 +68,7 @@ $color-icon: #99e2d0;
       bottom: 0;
     }
   }
+
   &--entry,
   &--plate,
   &--desserts {
@@ -84,6 +85,7 @@ $color-icon: #99e2d0;
   box-shadow: 0 0.6rem 1rem rgba($color-black, 0.1);
   overflow: hidden;
   cursor: pointer;
+  animation: scale-in-ver-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 
   &--header {
     flex: 1;
@@ -135,5 +137,54 @@ $color-icon: #99e2d0;
 
   &:hover .icon {
     transform: rotate(0);
+  }
+}
+
+// Animations menu
+.menu__list {
+  .animationDelay--1 {
+    animation-delay: 0s;
+  }
+
+  .animationDelay--2 {
+    animation-delay: 0.4s;
+  }
+
+  .animationDelay--3 {
+    animation-delay: 0.8s;
+  }
+
+  .animationDelay--4 {
+    animation-delay: 1s;
+  }
+
+  .animationDelay--5 {
+    animation-delay: 1.4s;
+  }
+
+  .animationDelay--6 {
+    animation-delay: 1.8s;
+  }
+
+  .animationDelay--7 {
+    animation-delay: 2s;
+  }
+
+  .animationDelay--8 {
+    animation-delay: 2.4s;
+  }
+
+  .animationDelay--9 {
+    animation-delay: 2.8s;
+  }
+
+  &--plate {
+    animation: scale-in-ver-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 1s;
+  }
+
+  &--desserts {
+    animation: scale-in-ver-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 2s;
   }
 }

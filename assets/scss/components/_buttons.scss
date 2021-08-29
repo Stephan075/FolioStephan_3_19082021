@@ -22,6 +22,6 @@
   }
   &--gradient {
     color: white;
-    background: linear-gradient(to top left, #9356dc, #ff79da);
+    background: $linear-gradient-1;
   }
 }

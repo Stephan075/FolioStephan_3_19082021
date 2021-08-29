@@ -247,10 +247,29 @@ body {
   }
 }
 
-.restaurant__content .card__btn {
-  &--like {
+.card__btn {
+  &--heart {
+    position: absolute;
+    right: 1.4rem;
+  }
+
+  &--animation {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    right: 1.3rem;
+    transition: opacity 0.5s;
+
     &:hover {
-      color: red;
+      opacity: 1;
+    }
+
+    .fa-gradient {
+      font-size: 3.4rem;
+      background: $linear-gradient-1;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
     }
   }
 }
