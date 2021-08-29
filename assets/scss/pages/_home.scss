@@ -9,21 +9,6 @@ $color-operation-icon: #828282;
 $color-operation-hover: #f5edff;
 $color-text-badge: #1d987a;
 
-body {
-  background: green;
-
-  @include xl {
-    background: orange;
-  }
-
-  @include sm {
-    background: blue;
-  }
-  @include xs {
-    background: palevioletred;
-  }
-}
-
 .loader {
   overflow: hidden;
   background: var(--background-secondaire);
@@ -243,33 +228,6 @@ body {
     line-height: 2rem;
     p:nth-child(1) {
       font-weight: 700;
-    }
-  }
-}
-
-.card__btn {
-  &--heart {
-    position: absolute;
-    right: 1.4rem;
-  }
-
-  &--animation {
-    position: absolute;
-    cursor: pointer;
-    opacity: 0;
-    right: 1.3rem;
-    transition: opacity 0.5s;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    .fa-gradient {
-      font-size: 3.4rem;
-      background: $linear-gradient-1;
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
     }
   }
 }

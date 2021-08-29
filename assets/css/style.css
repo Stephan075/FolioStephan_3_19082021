@@ -15,6 +15,25 @@
   box-shadow: 0 0 1.6rem #0000002e;
   margin-bottom: 3rem; }
 
+.card__btn--heart {
+  position: absolute;
+  right: 1.4rem; }
+
+.card__btn--animation {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  right: 1.3rem;
+  transition: opacity 0.5s; }
+  .card__btn--animation:hover {
+    opacity: 1; }
+  .card__btn--animation .fa-gradient {
+    font-size: 3.4rem;
+    background: linear-gradient(to top left, #9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+
 /* Landscape phones */
 /* Landscape phone to portrait tablet */
 /* Portrait tablet to landscape and desktop */
@@ -201,18 +220,6 @@ footer a {
         margin-right: 2rem;
         font-size: 1.3rem; }
 
-body {
-  background: green; }
-  @media only screen and (min-width: 1400px) {
-    body {
-      background: orange; } }
-  @media only screen and (max-width: 767px) {
-    body {
-      background: blue; } }
-  @media only screen and (max-width: 480px) {
-    body {
-      background: palevioletred; } }
-
 .loader {
   overflow: hidden;
   background: var(--background-secondaire);
@@ -385,25 +392,6 @@ body {
   line-height: 2rem; }
   .restaurant__content .list__item--text p:nth-child(1) {
     font-weight: 700; }
-
-.card__btn--heart {
-  position: absolute;
-  right: 1.4rem; }
-
-.card__btn--animation {
-  position: absolute;
-  cursor: pointer;
-  opacity: 0;
-  right: 1.3rem;
-  transition: opacity 0.5s; }
-  .card__btn--animation:hover {
-    opacity: 1; }
-  .card__btn--animation .fa-gradient {
-    font-size: 3.4rem;
-    background: linear-gradient(to top left, #9356dc, #ff79da);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent; }
 
 .menu__hero--img img {
   height: 30rem;

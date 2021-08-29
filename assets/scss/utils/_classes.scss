@@ -5,3 +5,30 @@
   box-shadow: 0 0 1.6rem #0000002e;
   margin-bottom: 3rem;
 }
+
+.card__btn {
+  &--heart {
+    position: absolute;
+    right: 1.4rem;
+  }
+
+  &--animation {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    right: 1.3rem;
+    transition: opacity 0.5s;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .fa-gradient {
+      font-size: 3.4rem;
+      background: $linear-gradient-1;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+}
