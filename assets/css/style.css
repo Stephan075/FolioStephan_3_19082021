@@ -32,7 +32,7 @@
 .card__btn--animation .heart_animation {
   width: 35px;
   height: 35px;
-  background-image: url('./FolioStephan_3_19082021/assets/images/background/heart-animation.jpg');
+  background-image: url('/FolioStephan_3_19082021/assets/images/background/heart-animation.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
