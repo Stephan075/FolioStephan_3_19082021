@@ -23,16 +23,16 @@
   position: absolute;
   cursor: pointer;
   opacity: 0;
-  right: 1.3rem;
+  right: 1.4rem;
   transition: opacity 0.5s; }
+  .card__btn--animation .heart_animation {
+    width: 35px;
+    height: 35px;
+    background-image: url("/assets/images/background/heart-animation.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
   .card__btn--animation:hover {
     opacity: 1; }
-  .card__btn--animation .fa-gradient {
-    font-size: 3.4rem;
-    background: linear-gradient(to top left, #9356dc, #ff79da);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent; }
 
 /* Landscape phones */
 /* Landscape phone to portrait tablet */
